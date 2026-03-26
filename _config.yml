@@ -12,11 +12,11 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Gengyang Xu"
 title_separator          : "-"
 name                     : &name "Gengyang Xu"
-description              : &description "Gengyang Xu's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://billxgy.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+description              : &description "Gengyang Xu is a PhD student in Computer Science and Engineering at HKUST, focusing on Programming Languages, Software Engineering, and Security."
+url                      : https://gengyang-xu.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "gengyang-xu/gengyang-xu.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -28,8 +28,8 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "PhD student at Department of Computer Science and Engineering, HKUST"
   location         : "Hong Kong"
-  employer         : "Hong Kong University of Science and Technology"
-  uri              : # URL
+  employer         : "HKUST"
+  uri              : "https://gengyang-xu.github.io"
   email            : "gxuah@cse.ust.hk" 
 
   # Academic websites
@@ -51,7 +51,7 @@ author:
   # bitbucket        : # Username - Update with your username on the site
   # codepen          : # Username
   # dribbble         : # Username
-  # github           : "academicpages"
+  github           : "gengyang-xu"
   # kaggle           : # Username  
   # stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -144,13 +144,17 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_description           : *description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Gengyang Xu"
+  links:
+    - "https://gengyang-xu.github.io"
+    - "https://scholar.google.com/citations?user=rHHcHdIAAAAJ"
+    - "https://orcid.org/0009-0001-7221-7845"
+    - "https://github.com/gengyang-xu"
 
 
 # Analytics
@@ -158,6 +162,12 @@ analytics:
   provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
+
+# Visitor map (ClustrMaps)
+visitor_map:
+  enabled                : true
+  provider               : "clustrmaps"
+  clustrmaps_id          : "" # Paste the `d` value from your ClustrMaps embed script
 
 
 # Reading Files
