@@ -167,7 +167,7 @@ analytics:
 visitor_map:
   enabled                : true
   provider               : "clustrmaps"
-  clustrmaps_id          : "" # Paste the `d` value from your ClustrMaps embed script
+  clustrmaps_id          : "dS34j-rmpJvs-r249OPWkG6Bz_w0Cy6OhnLKvF4e_ZQ" # Paste the `d` value from your ClustrMaps embed script
 
 
 # Reading Files
