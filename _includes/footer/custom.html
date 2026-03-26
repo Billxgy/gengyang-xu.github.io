@@ -15,7 +15,7 @@
 
 {% if site.visitor_map.enabled and site.visitor_map.provider == "clustrmaps" and site.visitor_map.clustrmaps_id != "" %}
 <div style="margin-top: 1rem; text-align: center;">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d={{ site.visitor_map.clustrmaps_id }}"></script>
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d={{ site.visitor_map.clustrmaps_id }}&cl=ffffff&w=a"></script>
 </div>
 {% endif %}
 
